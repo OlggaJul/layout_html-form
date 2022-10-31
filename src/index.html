@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="wth=device-wth, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
@@ -15,90 +15,67 @@
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
-        <div class="form">
-          <label for="lastName">Surname:</label>
+        <label class="form">Surname:
           <input
             type="text"
             name="lastName"
-            id="lastName"
             autocomplete="off"
           >
-        </div>
+        </label>
 
-        <div class="form">
-          <label for="firstName">Name:</label>
+        <label class="form">Name:
           <input
             type="text"
             name="firstName"
-            id="firstName"
             autocomplete="off"
             minlength="2"
             maxlength="20"
           >
-        </div>
+        </label>
 
-        <div class="form">
-          <label for="age">How old are You?</label>
+        <label class="form">How old are You?
           <input
             type="number"
             min="1"
             max="100"
             value="12"
             name="age"
-            id="age"
           >
-        </div>
+        </label>
 
-        <div class="form">
-          <label for="date">Full date of birth:</label>
-          <input
-            type="date"
-            name="dateOfBirth"
-            id="date"
-          >
-        </div>
+        <label class="form">Full date of birth:
+          <input type="date" name="dateOfBirth">
+        </label>
 
-        <div class="form">
-          <label for="acceptBox">I accept the term of the agreement</label>
+        <label class="form">I accept the term of the agreement
           <input
             type="checkbox"
             name="acceptBox"
-            id="acceptBox"
             required
           >
-        </div>
-
+        </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>Registration</legend>
 
-        <div class="form">
-          <label for="email">E-mail:</label>
+        <label class="form">E-mail:
           <input
             type="email"
             name="email"
-            id="email"
             placeholder="email@example.com"
           >
-        </div>
+        </label>
 
-        <div class="form">
-          <label for="password">Password:</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-          >
-        </div>
-
+        <label class="form">Password:
+          <input type="password" name="password">
+        </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <div class="form">
-          Do you love cats?
+        <div class="form">Do you love cats?
           <label>
             <input
               type="radio"
@@ -118,64 +95,48 @@
           </label>
         </div>
 
-        <div class="form">
-          <label for="color">What is your favorite color?</label>
-          <input
-            type="color"
-            name="color"
-            id="color"
-          >
-        </div>
+        <label class="form" for="color">What is your favorite color?
+          <input type="color" name="color">
+        </label>
 
-        <div class="form">
-          <label for="time">What time do you go to bed?</label>
+        <label class="form">What time do you go to bed?
           <input
             type="time"
             name="time"
-            id="time"
             step="0000001"
           >
-        </div>
+        </label>
 
-        <div class="form">
-          <label for="car">What are your favorite brand of cars?</label>
-          <select
-            name="favoriteCar"
-            id="car"
-            multiple
-          >
+        <label class="form">What are your favorite brand of cars?
+          <select name="favoriteCar" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
-        </div>
+        </label>
 
-        <div class="form">
-          <label for="workRate">How do you rate our work?</label>
+        <label class="form">How do you rate our work?
           <input
             type="range"
             name="workRate"
-            id="workRate"
             value="0"
           >
-        </div>
+        </label>
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
 
-        <div class="form">
-          <label for="comment">Comments:</label>
-          <textarea name="comment" id="comment"></textarea>
-        </div>
+        <label class="form">Comments:
+          <textarea name="comment"></textarea>
+        </label>
 
-        <div class="form">
-          <label for="recommendation">Would you recommend us?</label>
-          <select name="recommendation" id="recommendation">
+        <label class="form">Would you recommend us?
+          <select name="recommendation">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
-        </div>
+        </label>
       </fieldset>
 
       <button type="submit">Submit</button>
